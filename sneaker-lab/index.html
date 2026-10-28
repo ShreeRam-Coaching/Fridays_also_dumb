@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#15231e">
+  <meta name="description" content="Delhi Clinic — Ayurvedic and Allopathic care, on-site testing and general consultations in Jharoda Kalan, New Delhi.">
+  <title>Delhi Clinic — A little more human care</title>
+  <link rel="icon" href="./assets/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scene3d.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Delhi Clinic home"><img src="./assets/logo.png" alt="" width="34" height="34"><span>DELHI <i>CLINIC</i></span></a>
+    <nav aria-label="Main navigation"><a href="#care">Care</a><a href="#clinic">Our clinic</a><a href="#visit">Find us</a></nav>
+    <a class="header-visit" href="https://wa.me/919868966923?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20a%20visit%20to%20Delhi%20Clinic." target="_blank" rel="noreferrer">ARRANGE A VISIT <span>↗</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation"><span></span><span></span></button>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden><a href="#care">Care</a><a href="#clinic">Our clinic</a><a href="#visit">Find us</a><a href="https://wa.me/919868966923" target="_blank" rel="noreferrer">WhatsApp the clinic ↗</a></nav>
+
+  <main id="main">
+    <section class="experience" id="top" aria-label="A 3D story about care">
+      <div class="experience-viewport">
+        <div class="scene-atmosphere" aria-hidden="true"><div class="scene-halo"></div><div class="scene-ground"></div><div class="scene-grain"></div><div class="scene-grid"></div></div>
+        <canvas id="clinic-scene" aria-hidden="true"></canvas>
+        <div class="scene-fallback" aria-hidden="true"><img src="./assets/clinic-hero.jpg" alt=""><span>DELHI CLINIC&nbsp; / &nbsp;JHARODA KALAN</span></div>
+        <div class="scene-loading" id="scene-status" role="status">PREPARING THE SPACE</div>
+        <div class="experience-topline"><span>DELHI CLINIC&nbsp; / &nbsp;A DIFFERENT KIND OF CARE</span><span>28°38'10.8&quot;N&nbsp; 76°57'43.1&quot;E</span></div>
+
+        <article class="scene-copy scene-copy-a is-current" data-scene="0" aria-hidden="false"><p class="scene-kicker"><span></span> GOOD CARE, CLOSE TO YOU</p><h1>Care with<br>a <i>human</i><br>heart.</h1><p class="scene-description">Thoughtful everyday care for the people and neighbourhood you call home.</p><a class="scene-link" href="#care">STEP INTO OUR WORLD <span>↓</span></a><span class="scene-scene-index">SCENE 01 <i>—</i> THE FORM</span></article>
+        <article class="scene-copy scene-copy-b" data-scene="1" aria-hidden="true"><p class="scene-kicker"><span></span> MORE THAN ONE PERSPECTIVE</p><h2>Different paths.<br/><i>One place.</i></h2><p class="scene-description">Ayurvedic care. Allopathic care. On-site testing. General consultation. Thoughtfully brought together in one neighbourhood clinic.</p><div class="scene-service-rail"><span>AYURVEDA</span><b>·</b><span>ALLOPATHY</span><b>·</b><span>ON-SITE TESTING</span></div><span class="scene-scene-index">SCENE 02 <i>—</i> THE INNER WORLD</span></article>
+        <article class="scene-copy scene-copy-c" data-scene="2" aria-hidden="true"><p class="scene-kicker"><span></span> HERE, IN YOUR NEIGHBOURHOOD</p><h2>A familiar<br>place to <i>begin.</i></h2><p class="scene-description">A women-owned practice, welcoming walk-ins every day in Jharoda Kalan.</p><a class="scene-link" href="#clinic">MEET YOUR NEIGHBOURHOOD CLINIC <span>↓</span></a><span class="scene-scene-index">SCENE 03 <i>—</i> THE HUMAN SIDE</span></article>
+        <article class="scene-copy scene-copy-d" data-scene="3" aria-hidden="true"><p class="scene-kicker"><span></span> OPEN DAILY&nbsp; / &nbsp;8 AM—8 PM</p><h2>Your next<br>step starts <i>here.</i></h2><p class="scene-description">Walk in or get in touch. We'll help you find your way to the clinic.</p><a class="scene-link scene-link-bright" href="https://wa.me/919868966923?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20a%20visit%20to%20Delhi%20Clinic." target="_blank" rel="noreferrer">MESSAGE THE CLINIC ON WHATSAPP <span>↗</span></a><span class="scene-scene-index">SCENE 04 <i>—</i> THE WAY FORWARD</span></article>
+
+        <figure class="scene-photo" id="scene-photo" aria-hidden="true"><img src="./assets/clinic-hero.jpg" alt=""><figcaption>THE CLINIC&nbsp; / &nbsp;JHARODA KALAN</figcaption></figure>
+
+        <div class="scene-meta"><span class="meta-mark">DC—01</span><span class="meta-rule"></span><span>SCROLL TO MOVE THROUGH CARE</span></div>
+        <div class="scene-progress" aria-hidden="true"><span id="scene-progress-fill"></span></div>
+        <span class="scene-counter" id="scene-counter" aria-live="polite">01 <i>/ 04</i></span>
+      </div>
+      <div class="experience-scroll-space" aria-hidden="true"></div>
+    </section>
+
+    <section class="care-section" id="care" aria-labelledby="care-title">
+      <div class="section-index"><span>01 / THE CARE</span><span>FOUR WAYS TO BEGIN</span></div>
+      <div class="care-heading"><p class="eyebrow">THOUGHTFULLY BROUGHT TOGETHER</p><h2 id="care-title">Care that meets<br/><i>you where you are.</i></h2><p>From familiar approaches to helpful testing, find the kind of care you came looking for.</p></div>
+      <div class="service-list">
+        <a class="service-row" href="https://wa.me/919868966923?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20Ayurvedic%20treatment." target="_blank" rel="noreferrer"><span class="service-no">01</span><div class="service-image"><img src="./assets/ayurvedic-care.jpg" alt="Herbs and mortar representing Ayurvedic treatment" loading="lazy"></div><div class="service-copy"><h3>Ayurvedic treatment</h3><p>Herbal treatment planned to suit your body and your problem.</p></div><span class="service-arrow">↗</span></a>
+        <a class="service-row" href="https://wa.me/919868966923?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20Allopathic%20care." target="_blank" rel="noreferrer"><span class="service-no">02</span><div class="service-image"><img src="./assets/medical-care.jpg" alt="Stethoscope and medical supplies" loading="lazy"></div><div class="service-copy"><h3>Allopathic care</h3><p>Regular medicines for sudden illness and long-term problems.</p></div><span class="service-arrow">↗</span></a>
+        <a class="service-row" href="https://wa.me/919868966923?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20on-site%20testing." target="_blank" rel="noreferrer"><span class="service-no">03</span><div class="service-image"><img src="./assets/medical-care.jpg" alt="Medical testing supplies" loading="lazy"></div><div class="service-copy"><h3>On-site testing</h3><p>Tests are done at the clinic, without a separate lab visit.</p></div><span class="service-arrow">↗</span></a>
+        <a class="service-row" href="https://wa.me/919868966923?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20a%20general%20consultation." target="_blank" rel="noreferrer"><span class="service-no">04</span><div class="service-image"><img src="./assets/clinic-hero.jpg" alt="Bright consultation room at Delhi Clinic" loading="lazy"></div><div class="service-copy"><h3>General consultation</h3><p>Simple, calm check-ups where everything is explained clearly.</p></div><span class="service-arrow">↗</span></a>
+      </div>
+      <p class="section-footnote">ASK ABOUT A SPECIFIC SERVICE&nbsp; <a href="tel:+919868966923">098689 66923 ↗</a></p>
+    </section>
+
+    <section class="clinic-section" id="clinic" aria-labelledby="clinic-title">
+      <div class="clinic-image"><img src="./assets/clinic-hero.jpg" alt="Sunlit consultation room at Delhi Clinic" loading="lazy"><span>DELHI CLINIC · JHARODA KALAN</span><span class="clinic-image-mark">ROOM<br>TO LISTEN.</span></div>
+      <div class="clinic-copy"><div class="section-index"><span>02 / THE CLINIC</span><span>A PLACE CLOSE TO HOME</span></div><p class="eyebrow">A NEIGHBOURHOOD PRACTICE</p><h2 id="clinic-title">Good care,<br/><i>close to you.</i></h2><p class="clinic-intro">Delhi Clinic brings Ayurvedic and Allopathic care together in Jharoda Kalan, with on-site testing and a walk-in-friendly approach.</p><div class="clinic-facts"><div><span>01</span><p><b>Women-owned practice</b><br/>A friendly place where every patient is heard.</p></div><div><span>02</span><p><b>Walk-ins welcome</b><br/>Open every day, including weekends.</p></div><div><span>03</span><p><b>One neighbourhood clinic</b><br/>RZ Plot 1 &amp; 2, near CRPF Camp.</p></div></div></div>
+    </section>
+
+    <section class="visit-section" id="visit" aria-labelledby="visit-title"><div class="visit-orbit" aria-hidden="true"></div><div class="visit-content"><p class="eyebrow">DELHI CLINIC&nbsp; / &nbsp;JHARODA KALAN</p><h2 id="visit-title">We’re here<br/>when you <i>need us.</i></h2><p>Walk in any day from 8 AM to 8 PM, or call ahead to ask about your visit.</p><div class="visit-actions"><a href="https://wa.me/919868966923?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20a%20visit%20to%20Delhi%20Clinic." target="_blank" rel="noreferrer" class="visit-primary">MESSAGE US ON WHATSAPP <span>↗</span></a><a href="tel:+919868966923" class="visit-phone">CALL 098689 66923</a></div><p class="visit-hours">OPEN DAILY&nbsp; · &nbsp;8 AM—8 PM</p></div><div class="visit-location"><span class="location-number">28°38'10.8&quot;N</span><span>RZ Plot No. 1 &amp; 2<br/>Near CRPF Camp, Vinoba Enclave Extn,<br/>Block A1, Naveen Palace, Jharoda Kalan,<br/>New Delhi 110072</span><a href="https://www.google.com/maps?q=28.6363264,76.9619779" target="_blank" rel="noreferrer">OPEN DIRECTIONS <b>↗</b></a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-main"><a class="wordmark footer-wordmark" href="#top"><img src="./assets/logo.png" alt="" width="34" height="34"><span>DELHI <i>CLINIC</i><small>GOOD CARE, CLOSE TO YOU</small></span></a><p class="footer-line">A little more<br/><i>human.</i></p><div class="footer-contact"><span>FIND US</span><p>RZ Plot No. 1 &amp; 2, near CRPF Camp,<br/>Vinoba Enclave Extn, Block A1,<br/>Naveen Palace, Jharoda Kalan,<br/>New Delhi 110072</p><a href="https://www.google.com/maps?q=28.6363264,76.9619779" target="_blank" rel="noreferrer">DIRECTIONS ↗</a></div><div class="footer-contact"><span>GET IN TOUCH</span><p>Daily · 8 AM–8 PM<br/>098689 66923</p><a href="tel:+919868966923">CALL THE CLINIC ↗</a><a href="https://wa.me/919868966923" target="_blank" rel="noreferrer">WHATSAPP ↗</a></div></div><div class="legal-notes"><details id="privacy"><summary>Privacy</summary><p>This website does not collect appointment information. WhatsApp and phone links open those services so you can contact the clinic. Information you share there is handled by those services and the clinic.</p></details><details id="terms"><summary>Terms</summary><p>Website information describes the clinic and its listed services. It is general information, not medical advice. Please contact the clinic directly about care and service availability.</p></details></div><div class="footer-bottom"><span>© 2026 DELHI CLINIC</span><span>28°38'10.8&quot;N · 76°57'43.1&quot;E</span><a href="#top">RETURN TO THE SURFACE ↑</a></div></footer>
+</body>
+</html>
